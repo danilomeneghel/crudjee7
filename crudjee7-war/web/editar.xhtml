@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>Editar Produto</title>
+    </h:head>
+    <h:body>
+        <f:view>
+            <h:form>
+                <h1><h:outputText value="Editar Produto"/></h1>
+                <h:panelGrid columns="2">
+                    <h:outputLabel value="Id:" for="id" />
+                    <h:inputText readonly="true" id="id" value="#{produtoController.p.id}" title="Id" required="true" requiredMessage="The Id field is required."/>
+                    <h:outputLabel value="Nome:" for="nome" />
+                    <h:inputText id="nome" value="#{produtoController.p.nome}" title="Nome" required="true" requiredMessage="The Nome field is required."/>
+                    <h:outputLabel value="Preco:" for="preco" />
+                    <h:inputText id="preco" value="#{produtoController.p.preco}" title="Preco" />
+                    <h:outputLabel value="Quantidade:" for="quantidade" />
+                    <h:inputText id="quantidade" value="#{produtoController.p.quantidade}" title="Quantidade" />
+                    <h:outputLabel value="Descricao:" for="descricao" />
+                    <h:inputText id="descricao" value="#{produtoController.p.descricao}" title="Descricao" />
+                    <h:commandButton value="Salvar" action="#{produtoController.edit()}"></h:commandButton>
+                </h:panelGrid>
+            </h:form>
+        </f:view>
+    </h:body>
+</html>

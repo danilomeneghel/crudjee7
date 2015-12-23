@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>Lista de Produtos</title>
+    </h:head>
+    <h:body>
+        <f:view>
+            <h:link value="Adicionar Produto" outcome="adicionar"></h:link>
+            <h:form>
+                <h1><h:outputText value="Lista de Produtos"/></h1>
+                <h:dataTable value="#{produtoController.findAll()}" var="item" border="1">
+                    <h:column>
+                        <f:facet name="header">
+                            <h:outputText value="Id"/>
+                        </f:facet>
+                        <h:outputText value="#{item.id}"/>
+                    </h:column>
+                    <h:column>
+                        <f:facet name="header">
+                            <h:outputText value="Nome"/>
+                        </f:facet>
+                        <h:outputText value="#{item.nome}"/>
+                    </h:column>
+                    <h:column>
+                        <f:facet name="header">
+                            <h:outputText value="Preco"/>
+                        </f:facet>
+                        <h:outputText value="#{item.preco}"/>
+                    </h:column>
+                    <h:column>
+                        <f:facet name="header">
+                            <h:outputText value="Quantidade"/>
+                        </f:facet>
+                        <h:outputText value="#{item.quantidade}"/>
+                    </h:column>
+                    <h:column>
+                        <f:facet name="header">
+                            <h:outputText value="Descricao"/>
+                        </f:facet>
+                        <h:outputText value="#{item.descricao}"/>
+                    </h:column>
+                    <h:column>
+                        <f:facet name="header">Opções</f:facet>
+                        <h:commandLink value="Remover" action="#{produtoController.delete(item)}" onclick="return confirm('Deseja mesmo excluir esse produto?')"></h:commandLink> | 
+                        <h:commandLink value="Editar" action="#{produtoController.edit(item)}"></h:commandLink>
+                    </h:column>
+                </h:dataTable>
+            </h:form>
+        </f:view>
+    </h:body>
+</html>
