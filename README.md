@@ -49,10 +49,12 @@ mysql> source crud_jee.sql
 
 ## Glassfish Configuration
 
-1- Create the Java EE project (Enterprise Application) without creating any new classes. <br>
-2- After, click on "Clean and Build Project". When successful, click on "Run Project". <br>
+1- Download the more stable version of Glassfish 4.1 and import it into NetBeans (the default version of NetBeans may give error). <br>
+http://download.java.net/glassfish/4.1/release/glassfish-4.1.zip <br>
+2- Create the Java EE project (Enterprise Application) without creating any new classes. <br>
+3- After, click on "Clean and Build Project". When successful, click on "Run Project". <br>
 This will cause Glassfish to start. <br>
-3- Now open the Glassfish by accessing the browser: http://localhost:4848/ <br><br>
+4- Now open the Glassfish by accessing the browser: http://localhost:4848/ <br><br>
 
 Go to "Resources/JDBC/JDBC Connection Pools", create the connection to the database (pool). <br>
 Note: When creating the Pool it is necessary to put the connection data with mysql, but the password can not be empty (create a new user with a password). <br><br>
