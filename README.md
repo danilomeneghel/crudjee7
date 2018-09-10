@@ -1,6 +1,6 @@
 # Products
 
-Project of register Products developed with Java EE.
+Project of register Products developed with Java EE 7.
 
 ## Features
 
@@ -10,11 +10,15 @@ Project of register Products developed with Java EE.
 - EJB
 - JPA
 - JSF
+- DataTables
+- Paginator
+- Search
+- Sort Column
 
 ## Requirements
 
 - NetBeans 8.2
-- Java EE
+- Java JDK 1.8
 - Glassfish = 4.1
 - MySql >=5
 
@@ -23,6 +27,7 @@ Project of register Products developed with Java EE.
 - Java
 - CSS
 - JS
+- BootsFaces
 - MySql
 
 ## Installation
