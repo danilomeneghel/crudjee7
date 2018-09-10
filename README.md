@@ -69,6 +69,11 @@ Then go to "Resources/JDBC/JDBC Resources", create a name for "jndi" (CrudJEE7) 
 After you finish configuring, just open NetBeans and run the project in the browser. <br>
 http://localhost:8080/crudjee7-war/
 
+## BootsFaces Library
+
+Download BootsFaces and import your jar file into the project library. <br>
+http://www.bootsfaces.net/download/BootsFaces-OSP-1.3.0-dist-default.jar
+
 ## License
 
 Office is licensed under <a href="LICENSE">The MIT License (MIT)</a>.
