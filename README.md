@@ -7,7 +7,7 @@ Project of register Products developed with Java EE 7.
 - CRUD
 - MVC
 - ORM
-- Beans
+- EJB (Beans)
 - DataTables
 - Paginator
 - Search
@@ -23,7 +23,6 @@ Project of register Products developed with Java EE 7.
 ## Tecnologies
 
 - Java
-- EJB
 - JPA
 - JSF
 - CSS
