@@ -7,9 +7,7 @@ Project of register Products developed with Java EE 7.
 - CRUD
 - MVC
 - ORM
-- EJB
-- JPA
-- JSF
+- Beans
 - DataTables
 - Paginator
 - Search
@@ -25,6 +23,9 @@ Project of register Products developed with Java EE 7.
 ## Tecnologies
 
 - Java
+- EJB
+- JPA
+- JSF
 - CSS
 - JS
 - BootsFaces
@@ -76,7 +77,7 @@ http://www.bootsfaces.net/download/BootsFaces-OSP-1.3.0-dist-default.jar
 
 ## License
 
-Office is licensed under <a href="LICENSE">The MIT License (MIT)</a>.
+Products is licensed under <a href="LICENSE">The MIT License (MIT)</a>.
 
 ## Screenshots
 
