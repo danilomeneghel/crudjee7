@@ -76,7 +76,7 @@ http://www.bootsfaces.net/download/BootsFaces-OSP-1.3.0-dist-default.jar
 
 ## License
 
-Products is licensed under <a href="LICENSE">The MIT License (MIT)</a>.
+This project is licensed under <a href="LICENSE">The MIT License (MIT)</a>.
 
 ## Screenshots
 
